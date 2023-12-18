@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Warranty Registration Form</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+    <form action='process_form.php' method='post' enctype='multipart/form-data'>
+        <label for='orderNo'>Installation Service Order No:</label>
+        <input type='text' name='orderNo' id='orderNo' required pattern='[A-Za-z]{3}\d{10}'>
+        
+        <label for='modelName'>Model Name:</label>
+        <select name='modelName' id='modelName' required>
+            <option value='LTW'>LTW</option>
+            <option value='Aero'>Aero</option>
+        </select>
+        <input type='submit' name='submit' value='Go Ahead'>
+    </form>
+</body>
+</html>
+
+
+
