@@ -36,6 +36,21 @@
 
 <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $username = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['mobile'];
+        $address = $_POST['address'];
+        $city = $_POST['city'];
+        $state = $_POST['state'];
+        $pincode = $_POST['pincode'];
+        session_start();
+        $_SESSION['name'] = $username;
+        $_SESSION['email'] = $email;
+        $_SESSION['mobile'] = $phone;
+        $_SESSION['address'] = $address;
+        $_SESSION['city'] = $city;
+        $_SESSION['state'] = $state;
+        $_SESSION['pincode'] = $pincode;
         header('Location: product_info.php');
     }
 ?>

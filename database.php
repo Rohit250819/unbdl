@@ -11,8 +11,8 @@
         echo 'Could not connect!';
     }
 
-    $order = $_Post['orderNo'] ;
-    echo $order;
-    // $username = filter_input(INPUT_POST, "orderNo");
+    // $order = $_Post['orderNo'] ;
+    // echo $order;
+    // // $username = filter_input(INPUT_POST, "orderNo");
    
 ?>
